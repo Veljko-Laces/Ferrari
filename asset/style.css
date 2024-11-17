@@ -60,11 +60,10 @@ h6 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-p button {
+p {
     text-transform:uppercase;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 12px;
 }
 
 a {
@@ -73,7 +72,7 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     outline: none;
-    color: white;
+    
 }
 
 @monument {
@@ -125,11 +124,8 @@ a {
 }
 
 .specs {
-    height: 100%;
-    width: 100%;
-    margin-top: 6.25em;
     background-color: var(--neutral-1);
-    padding: 2.5em 1.5em;
+    padding: 7.5em 1.5em;
     display: flex;
     flex-direction: column;
     gap: 3.75em;
@@ -184,6 +180,54 @@ a {
     display : none;
 }
 
+.lignes {
+    background-color: var(--neutral-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7.5em 1.5em;
+    gap: 60px;
+}
+
+.lignes-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3.375em;
+}
+
+.neutral-1 {
+    color: var(--neutral-1);
+}
+
+.button-lignes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    border: 1px solid var(--neutral-1);
+}
+
+.lignes-images {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.troisieme-image{
+    width: 147px;
+    height: 111px;
+}
+
+.quatrieme-image {
+    width: 145px;
+    height: 109px;
+}
+
+.desktop-lignes-text {
+    display: none;
+}
 
 
 @media screen and (min-width: 767px) {
@@ -210,7 +254,6 @@ a {
 
     .specs {    
         padding: 5.75em 4em;
-
     }
 
     .specs-text-image {
@@ -238,5 +281,47 @@ a {
 
     .desktop-specs-text {
         display: block;
+    }
+
+    .desktop-lignes-text {
+        display: block;
+    }
+
+    .mobile-lignes-text {
+        display: none;
+    }
+
+    .lignes {
+        padding: 5.75em 4em;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .lignes-text {
+        width: 400px;
+        gap: 3.75em;
+    }
+
+    .button-lignes {
+        width: fit-content;
+    }
+
+    .lignes-images{
+        display: flex;
+        flex-direction: row;
+        gap: 1.25em;
+        justify-content: start;
+        width: fit-content;
+    }
+
+    .troisieme-image {
+        width: 326.67px;
+        height: 245px
+    }
+
+    .quatrieme-image {
+        width: 327.64px;
+        height: 245px;
     }
 }
