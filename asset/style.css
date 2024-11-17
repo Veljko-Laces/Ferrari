@@ -181,12 +181,12 @@ a {
 }
 
 .lignes {
+    padding: 7.5em 1.5em;
     background-color: var(--neutral-3);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7.5em 1.5em;
     gap: 60px;
 }
 
@@ -229,6 +229,46 @@ a {
     display: none;
 }
 
+.cockpit {
+    padding: 7.5em 1.5em;
+    background-color: var(--neutral-0);
+    display: flex;
+    flex-direction: column;
+    gap: 3.75em;
+}
+
+.cinquieme-image {
+    width: 100%;
+}
+
+.image-cockpit {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    width: fit-content;
+}
+
+.text-cockpit {
+    display: flex;
+    flex-direction: column;
+    gap: 3.25em;
+}
+
+.button-cockpit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    border: 1px solid var(--neutral-3);
+}
+
+.neutral-3 {
+    color: var(--neutral-3);
+}
+
+.desktop-cockpit-title {
+    display: none;
+}
 
 @media screen and (min-width: 767px) {
     
@@ -323,5 +363,32 @@ a {
     .quatrieme-image {
         width: 327.64px;
         height: 245px;
+    }
+
+    .cockpit {
+        padding: 5.75em 4em;
+        flex-direction: row;
+    }
+
+    .text-cockpit{
+        gap:6em;
+        text-align: left;
+        
+    }
+
+    .desktop-cockpit-title {
+        display: block;
+    }
+
+    .mobile-cockpit-title {
+        display: none;
+    }
+
+    .button-cockpit {
+        width: fit-content;
+    }
+
+    .cockpit-p {
+        width: 25em;
     }
 }
