@@ -260,6 +260,7 @@ a {
     align-items: center;
     padding: 16px 32px;
     border: 1px solid var(--neutral-3);
+    letter-spacing: 4px;
 }
 
 .neutral-3 {
@@ -268,6 +269,52 @@ a {
 
 .desktop-cockpit-title {
     display: none;
+}
+
+.footer {
+    padding: 5em 1.5em;
+    background-color: var(--neutral-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.logo-footer {
+    width: 147px;
+    height: 207px;
+}
+
+.links-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    letter-spacing: 4px;
+}
+
+.style-link-footer {
+    color: var(--neutral-0);
+}
+
+.icones-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25em;
+}
+
+.copyrights {
+    padding-bottom: 5em;
+    padding-left: 4em;
+    padding-right: 4em;
+    color: var(--neutral-0);
+    background-color: var(--neutral-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.25em;
+    letter-spacing: 4px;
 }
 
 @media screen and (min-width: 767px) {
@@ -390,5 +437,20 @@ a {
 
     .cockpit-p {
         width: 25em;
+    }
+
+    .footer {
+        padding : 5em 4em;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .links-footer {
+        flex-direction: row;
+    }
+
+    .copyrights {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
