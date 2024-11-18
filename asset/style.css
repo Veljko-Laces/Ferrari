@@ -78,6 +78,8 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     outline: none;
+    color: var(--neutral-0);
+    letter-spacing: 4px;
 }
 
 @font-face {
@@ -457,7 +459,7 @@ a {
     }
 
     .cinquieme-image {
-        width: 800px;
+        width: 600px;
     }
 
     .text-cockpit{
