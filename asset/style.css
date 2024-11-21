@@ -470,7 +470,11 @@ a {
 
     .desktop-cockpit-title {
         display: block;
-        letter-spacing: 40px;
+        text-transform:uppercase;
+        font-size: 80px;
+        line-height: 96px;
+        letter-spacing: 18px;
+        font-family: "Monument", Arial, sans-serif;
     }
 
     .mobile-cockpit-title {
